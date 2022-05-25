@@ -11,6 +11,7 @@ export function CryptoProvider({children}){
     setCurrency(cur)
   }
 
+
   const setGraphDays = (val) => {
     setDays(val)
   }

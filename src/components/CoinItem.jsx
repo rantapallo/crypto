@@ -8,9 +8,9 @@ function CryptoItem({coin}) {
 
   return (
     <>
-    <Link to={`/crypto/${coin.id}`}>
+    <Link to={`/${coin.id}`}>
     <div className="grid-container">
-      <div className="grid-item"><img src={coin.image} /></div>
+      <div className="grid-item"><img src={coin.image} alt={coin.name} /></div>
       <div className="grid-item">{coin.name}</div>
       <div className="grid-item">{curFormatter(coin.current_price, currency)}</div>
       <div className="grid-item">{coin.price_change_percentage_24h.toFixed(2)}%</div>

@@ -8,9 +8,9 @@ function SearchList({coins}) {
         <div className="list-header">Name</div>
       </div>
       {coins.map((coin) => (
-        <Link to={`/crypto/${coin.id}`} key={coin.id}>
+        <Link to={`/${coin.id}`} key={coin.id}>
           <div className="grid-container">
-            <div className="grid-item"><img src={coin.thumb} /></div>
+            <div className="grid-item"><img src={coin.thumb} alt={coin.name} /></div>
             <div className="grid-item">{coin.name}</div>
           </div>
         </Link>

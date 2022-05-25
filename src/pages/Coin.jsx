@@ -43,10 +43,12 @@ function Coin() {
 
   useEffect(() => {
     fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     fetchHistoryData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [days, currency])
 
   if (isLoading) {

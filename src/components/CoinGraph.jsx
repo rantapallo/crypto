@@ -16,7 +16,7 @@ function CoinGraph({coinHistory, days}) {
           datasets: [{
             label: `${days} days value change`,
             data: coinHistory.map((coin) => coin[1]),
-            borderColor: ['rgba(134, 194, 50, 1)'],
+            borderColor: ['rgba(110, 110, 110, 1)'],
             borderWidth: 1
           }]
         }} 

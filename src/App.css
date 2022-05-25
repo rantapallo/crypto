@@ -1,13 +1,69 @@
 :root {
-  --color-primary: #86C232;
-  --color-secondary: #61892F;
-  --color-text: #FDFDFD;
-  --color-extra1: #474b4f;
-  --color-extra2: #96999c;
-  --color-extra3: #6b6e70;
-  --color-bg: #222629;
-  --color-green: #86C232;
-  --color-red: #C25132;
+  --color-primary-dark: #86C232;
+  --color-text-dark: #FDFDFD;
+  --color-extra1-dark: #474b4f;
+  --color-extra2-dark: #96999c;
+  --color-extra3-dark: #6b6e70;
+  --color-bg-dark: #222629;
+  --color-green-dark: #86C232;
+  --color-red-dark: #C25132;
+
+  --color-primary-light: #457b9d;
+  --color-text-light: #17252a;
+  --color-extra1-light: #1d3557;
+  --color-extra2-light: #457b9d;
+  --color-extra3-light: #17252a;
+  --color-bg-light: #f8feff;
+  --color-green-light: #4F9C44;
+  --color-red-light: #e63946;
+}
+
+@media(prefers-color-scheme: dark){
+  :root {
+    --color-primary: var(--color-primary-dark);
+    --color-text: var(--color-text-dark);
+    --color-extra1: var(--color-extra1-dark);
+    --color-extra2: var(--color-extra2-dark);
+    --color-extra3: var(--color-extra3-dark);
+    --color-bg: var(--color-bg-dark);
+    --color-green: var(--color-green-dark);
+    --color-red: var(--color-red-dark);
+  }
+}
+
+@media(prefers-color-scheme: light){
+  :root {
+    --color-primary: var(--color-primary-light);
+    --color-text: var(--color-text-light);
+    --color-extra1: var(--color-extra1-light);
+    --color-extra2: var(--color-extra2-light);
+    --color-extra3: var(--color-extra3-light);
+    --color-bg: var(--color-bg-light);
+    --color-green: var(--color-green-light);
+    --color-red: var(--color-red-light);
+  }
+}
+
+[color-scheme="dark"]{
+  --color-primary: var(--color-primary-dark);
+  --color-text: var(--color-text-dark);
+  --color-extra1: var(--color-extra1-dark);
+  --color-extra2: var(--color-extra2-dark);
+  --color-extra3: var(--color-extra3-dark);
+  --color-bg: var(--color-bg-dark);
+  --color-green: var(--color-green-dark);
+  --color-red: var(--color-red-dark);
+}
+
+[color-scheme="light"] {
+  --color-primary: var(--color-primary-light);
+  --color-text: var(--color-text-light);
+  --color-extra1: var(--color-extra1-light);
+  --color-extra2: var(--color-extra2-light);
+  --color-extra3: var(--color-extra3-light);
+  --color-bg: var(--color-bg-light);
+  --color-green: var(--color-green-light);
+  --color-red: var(--color-red-light);
 }
 
 * {
@@ -127,6 +183,7 @@ a:hover {
   margin-bottom: 10px;
   font-family: inherit;
   outline: none;
+  margin-left: 10px;
 }
 
 .search {
