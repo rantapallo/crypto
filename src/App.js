@@ -21,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/crypto" element={<Home />} />
           <Route path="/:id" element={<Coin />} />
         </Routes>
         <Footer />
